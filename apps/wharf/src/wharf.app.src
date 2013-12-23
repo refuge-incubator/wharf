@@ -1,0 +1,34 @@
+%% -*- tab-width: 4;erlang-indent-level: 4;indent-tabs-mode: nil -*-
+%% ex: ft=erlang ts=4 sw=4 et
+
+%%% This Source Code Form is subject to the terms of the Mozilla Public
+%%% License, v. 2.0. If a copy of the MPL was not distributed with this
+%%% file, You can obtain one at http://mozilla.org/MPL/2.0/.
+%%%
+%%% See the NOTICE for more information.
+
+{application, wharf,
+ [
+  {description, ""},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  compiler,
+                  syntax_tools,
+                  sasl,
+                  lager,
+                  poolboy,
+                  erlang_js,
+                  crypto,
+                  asn1,
+                  public_key,
+                  ssl,
+                  hackney_lib,
+                  hackney,
+                  couchbeam
+                 ]},
+  {mod, { rcouchsync_app, []}},
+  {env, []}
+ ]}.
